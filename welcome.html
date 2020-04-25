@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>loading</title>
+<style>
+body
+{
+  background-color: black;   
+}
+p
+{
+    color: cornsilk;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: xxx-large;
+}    
+</style>
+</head>
+<body onload="count_start()"><h1 style="color: blanchedalmond;text-align: center;">GAME STARTS</h1>
+<p id="countdown">0</p>    
+<script>
+    var active =  false;
+    var count = 5;
+    function count_start()
+    {
+        active = true;
+        count--;
+        if(count == 0)
+        {
+            active = false;
+            window.open("index.html","_self");
+        }
+        else if(active)
+        {
+            document.getElementById('countdown').innerHTML =count;
+            setTimeout(count_start,1000);
+        }
+
+        
+    }
+</script>
+</body>
+</html>

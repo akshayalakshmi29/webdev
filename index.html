@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!--<body onload="generateRandom()" onload="initClock()">-->
+  <body onload="generateRandom()">
+
+
+  <section class="memory-game">
+
+    <div class="memory-card" data-framework="aurelia" onclick="assign_random_to_box('rnd0')">
+        <p class="back-face" id="rnd0">8</p>
+    </div>
+    
+    <div class="memory-card" onclick="assign_random_to_box('rnd1')">
+        <p class="back-face" id="rnd1">8</p>  
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd2')">
+      <p class="back-face" id="rnd2">8</p>
+    </div>
+
+    <div class="memory-card"   onclick="assign_random_to_box('rnd3')">
+      <p class="back-face" id="rnd3">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd4')" >
+      <p class="back-face" id="rnd4">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd5')">
+      <p class="back-face" id="rnd5">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd6')">
+      <p class="back-face" id="rnd6">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd7')">
+      <p class="back-face" id="rnd7">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd8')">
+      <p class="back-face" id="rnd8">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd9')">
+      <p class="back-face" id="rnd9">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd10')">
+          <p class="back-face" id="rnd10">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd11')">
+      <p class="back-face" id="rnd11">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd12')">
+      <p class="back-face" id="rnd12">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd13')">
+      <p class="back-face" id="rnd13">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd14')">
+      <p class="back-face" id="rnd14">8</p>
+    </div>
+
+    <div class="memory-card"  onclick="assign_random_to_box('rnd15')">
+      <p class="back-face" id="rnd15">8</p>
+    </div>
+    
+    <div id="my_timer" ><h3>TIMER</h3>
+     <a id="s"><br><h1></a>
+      <a id="mi">. 000</h1></a>
+      <!--<button id="control" onclick="changestate();">start</button>-->
+     <!--<button id="reset" onclick="reset();">reset</button>-->
+  </div>
+  <div id="best_time"><h3>Best Time</h3><br>
+  <p><h1>00.000</h1></p>
+ </div>
+ 
+</section>
+  <script src="scripts.js"></script> 
+</body>
+</html>
